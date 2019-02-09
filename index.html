@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="keywords" content="отдых в Седоне, Седона, жилье в Седоне">
 	<meta name="description" content="Поиск и бронирование жилья в Седоне. Помощь в организации отдыха.">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/normalize.css" rel="stylesheet">
 	<title>HTML Academy: Седона</title>
 </head>
 <body>
@@ -12,7 +15,7 @@
 			<a class="main-header-logo" href="index.html">
 				<img src="img/logo.png" width="140" height="72" alt="Логотип системы бронирования гостиниц города Седона">
 			</a>
-			<ul class="site-navegation">
+			<ul class="site-navigation">
 				<li><a href="info.html">Информация</a></li>
 				<li><a href="photo.html">Фото и видео</a></li>
 				<li><a href="map.html">Карта штата</a></li>
@@ -25,11 +28,9 @@
 	
 		<section class="welcome">
 			<h2 class="visually-hidden">Приветствие</h2>
-			<p>Welcome to the gorgeous</p>
-			<p>Sedona</p>
-			<p>"Becouse the Crand Canyon sucks"	</p>
 			<p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
 			<p>Рассмотрим 5 причин,по которым Седона круче, чем Гранд каньон</p>
+			<img src="img/welcome.png" width="459" height="353" alt="Приветствие">
 			<img src="img/background-photo.jpg" width="1200" height="773" alt="Панорама">
 		</section>
 		
@@ -37,12 +38,12 @@
 			<h2 class="visually-hidden">Преимущества</h2>
 			
 			<ul class="features-list">
-				<li class="features-item">
+				<li class="features-item-main">
 					<h3>Настоящий городок</h3>
 					<span>№1</span>
 					<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
 					<img src="img/ViewTown.jpg" width="800" height="256" alt="Виды города">
-					<ul class="features-item-main">
+					<ul class="features-item-main-details">
 						<li>
 						<h4>Жилье</h4>
 						<img src="img/hotel.svg" width="72" height="72" alt="Жилье">
@@ -63,13 +64,13 @@
 					</ul>
 				</li>
 				
-				<li class="features-item">
+				<li class="features-item-main">
 					<h3>Там есть Мост дьявола</h3>
 					<span>№2</span>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					<img src="img/ViewCanyon.jpg" width="800" height="256" alt="Виды каньона">
 				</li>
-				
+				<div class="features-item">
 				<li class="features-item">
 					<h3>Небольшая площадь</h3>
 					<span>№3</span>
@@ -87,6 +88,7 @@
 					<span>№5</span>
 					<p>Большинство едет в гранд каньон и толпится там</p>
 				</li>
+				</div>
 
 			</ul>
 		
@@ -98,11 +100,12 @@
 		<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 		</section>
 		
-		<button class="submit" type="button">Поиск гостиницы в Седоне</button>
-		<form class="search" method="post" action="https://echo.htmlacademy.ru">
+		<a class="booking-search" href="/search.html" alt="search hotel">Поиск гостиницы в Седоне</a>
+		<form class="booking-search-form" method="post" action="https://echo.htmlacademy.ru">
 		<div>
 			<label>Дата заезда:<input type="text" placeholder="21.02.2019"></label>
-			<br>
+		</div>
+		<div>
 			<label>Дата отъезда:<input type="text" placeholder="28.02.2019"></label>
 		</div>
 		<div>
@@ -126,9 +129,15 @@
 		
 		<div class="footer-sotial">
 			<ul>
-				<li> <a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter">Twitter</a></li>
-				<li> <a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">Facebook</a></li>
-				<li> <a class="social-button" href="#"><img src="img/Youtube.svg" width="20" height="16" alt="Youtube">Youtube</a></li>
+				<li> <a class="social-button"  href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter">
+				<span class="visually-hidden">Twitter</span>
+				</a></li>
+				<li> <a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
+				<span class="visually-hidden">Facebook</span>
+				</a></li>
+				<li> <a class="social-button" href="#"><img src="img/Youtube.svg" width="20" height="16" alt="Youtube">
+				<span class="visually-hidden">Youtube</span>
+				</a></li>
 			</ul>
 		</div>
 		
