@@ -9,8 +9,7 @@
 	color: #000000;
 	
 	background-color: #ffffff;
-	background-image: url("img/background-photo.jpg");
-	background-position: top center;
+
 
 }
 
@@ -31,10 +30,46 @@ a{
 .site-navigation a{
 	color: #000000;
 }
+.welcome {
+	
+	font-size: 21px;
+	line-height: 26px;	
+	color: #000000;
+	
+	background-image: url(img/welcome.png);
+	background-image: url(img/background-photo.jpg);
+	background-position: top center;
+	background-color: #ffffff
+}
+
+.welcome {
+	
+	font-size: 21px;
+	line-height: 26px;	
+	color: #000000;
+	text-align: center;
+	
+	background-color: #ffffff
+}
+
+.welcome-reasons {
+	
+	font-size: 14px;
+	line-height: 26px;	
+	font-weight: normal;
+	color: #333333;
+	text-align: center;
+	
+	background-color: #ffffff
+}
+
+
 .visually-hidden {
 	font-size: 1px;
 	visibility: hidden;
 }
+
+/*стилизация блока преимуществ*/
 
 .features-list {
 	list-style: none;
@@ -123,4 +158,134 @@ a{
 	color: #333333;
 	
 	background-color: #eeeeee;
+}
+
+/* стилизация формы поиска отеля */
+
+.booking {
+	font-size: 30px;
+	line-height: 36px;
+	color: #000000;
+	
+	background-color: #ffffff;
+	text-align: center;
+}	
+.booking p{
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #333333;
+	
+	background-color: #ffffff;
+}				
+
+.booking-search {
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+	
+	background-color: #766357;
+	padding:36px 142px;
+}
+
+.booking-search-form {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	
+	border: none;
+	background-color: #ffffff;
+}
+
+.booking-search-form input{
+	font: inherit;
+	
+	border: none;
+	background-color: #f2f2f2;
+}	
+
+.booking-search-form button{
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+	
+	border: none;
+	background-color: #81b3d2;
+}				
+
+/*стилизация footer*/
+
+.main-footer {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.footer-sotial {
+	text-align: center;
+
+}		
+		
+.footer-social-button {
+	list-style:none;
+	background-color: #81b3d2;
+}		
+
+/*стилизация страницы с отелями*/
+
+.hotels-list {
+	
+	background-color: #ffffff;
+}		
+
+
+.hotels-list-item-details {
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	
+	background-color: #81b3d2;
+	
+}																																									
+
+.hotels-list-item-booking {
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	
+	background-color: #766357; 
+	
+}	
+
+
+
+.hotels-list h3 {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	
+	background-color: #ffffff;
+}	
+.hotels-list {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #333333;
+	
+	background-color: #ffffff;
+}	
+
+.hotels-list-item-star {
+	list-style:none;
+}
+.hotels-list-item-rang {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #666666;
+	
+	background-color: #f2f2f2;
 }
