@@ -30,7 +30,7 @@
 			<h2 class="visually-hidden">Приветствие</h2>
 			<img src="img/welcome.png" width="459" height="353" alt="Приветствие">
 			<img src="img/background-photo.jpg" width="1200" height="773" alt="Панорама">
-			<div class="welcome">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</div>
+			<div class="welcome">Седона - небольшой городок в Аризоне, заслуживающий большего!</div>
 			<div class="welcome-reasons">Рассмотрим 5 причин,по которым Седона круче, чем Гранд каньон</div>
 			
 		</section>
@@ -102,23 +102,26 @@
 		</section>
 		
 		<a class="booking-search" href="/search.html" alt="search hotel">Поиск гостиницы в Седоне</a>
+		
+		<div class="booking-form">
 		<form class="booking-search-form" method="post" action="https://echo.htmlacademy.ru">
 		<div>
-			<label>Дата заезда:<input type="text" placeholder="21.02.2019"></label>
+			<label>Дата заезда:<input class="booking-search-form-input" type="text" placeholder="21.02.2019"></label>
 		</div>
 		<div>
-			<label>Дата отъезда:<input type="text" placeholder="28.02.2019"></label>
+			<label>Дата отъезда:<input class="booking-search-form-input" type="text" placeholder="28.02.2019"></label>
 		</div>
 		<div>
 			<label>Взрослые:<input type="number" step="1" name="num" min="1" max="4" value="1"></label>
 			<label>Дети:<input type="number" step="1" name="num" min="0" max="4" value="0"></label>
 		</div>
-			<button type="submit">Найти</button>
+			<button class="booking-search-form-button" type="submit">Найти</button>
 		</form>
+		<div>
 		
 		<section class="maps">
 		<h2 class="visually-hidden">Карты</h2>
-		<p>Секция карты</p>
+		<img src="img/map.png" width="1200" height="593" alt="Карта региона">
 		</section>
 		
 	</main>
@@ -143,7 +146,7 @@
 		</div>
 		
 		<p>
-		<span>website by</span><img src="img/logo-name.png" alt="logo-html-academy">
+		<span>website by</span><img class="footer-logo"src="img/logo-name.png" alt="logo-html-academy">
 		</p>
 		
 	</footer>

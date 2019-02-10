@@ -6,6 +6,7 @@
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 21px;	
+	text-transform: uppercase;
 	color: #000000;
 	
 	background-color: #ffffff;
@@ -63,10 +64,15 @@ a{
 	background-color: #ffffff
 }
 
-
 .visually-hidden {
-	font-size: 1px;
-	visibility: hidden;
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
 }
 
 /*стилизация блока преимуществ*/
@@ -189,49 +195,130 @@ a{
 	padding:36px 142px;
 }
 
+.booking-search:hover {
+	background-color: #604e43;
+}
+.booking-search:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+.booking-form {
+	text-align: center;
+	padding:55px 55px;
+	width: 568px;
+	height: 395px;
+	background-color: #ffffff;
+}
+
 .booking-search-form {
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
 	
 	border: none;
+	margin-bottom: 31px;
 	background-color: #ffffff;
 }
 
-.booking-search-form input{
+.booking-search-form-input {
 	font: inherit;
-	
+	margin-bottom: 31px;
 	border: none;
 	background-color: #f2f2f2;
-}	
+}
 
-.booking-search-form button{
+.booking-search-form-input:hover {
+	background-color: #ebebeb;
+}	
+.booking-search-form-input:focus{
+	background-color: #ffffff;
+	border-color: #e5e5e5;
+	border-width: 2px,
+}		
+
+.booking-search-form-button {
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
 	color: #ffffff;
 	
+	width: 458px;
+	height: 58px;
 	border: none;
 	background-color: #81b3d2;
-}				
+}	
+
+.booking-search-form-button:hover{
+	background-color: #669ec0;
+}
+
+.booking-search-form-button:active{
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3)
+}
+
+			
+/* стилизация секции карт*/
+
+
+
 
 /*стилизация footer*/
 
 .main-footer {
 	color: #000000;
+	
+	width:1200px;
+	height:120px;
 	background-color: #ffffff;
 }
 
-.footer-sotial {
-	text-align: center;
+.main-footer p{
+	font-size: 21px;
+	line-height: 26px;
+}
 
-}		
+.main-footer ul{
+		list-style:none;
+}
+	
 		
 .footer-social-button {
-	list-style:none;
+	width:36px;
+	height:36px;
 	background-color: #81b3d2;
-}		
+}	
 
+.footer-social-button:hover{
+	background-color: #669ec0
+}
+
+.footer-social-button:active{
+	background-color: #5496bd
+	color: #ffffff
+}
+
+.main-footer span{
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: normal;
+}	
+
+/*логотип вставлен изображением png!!!!*/
+.footer-logo:hover{
+	color: #ffffff
+}
+.footer-logo:active{
+	color: #ffffff
+}
+
+/*_________________________________________________________________________________________*/
 /*стилизация страницы с отелями*/
 
 .hotels-list {
