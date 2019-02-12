@@ -335,7 +335,17 @@ a{
 	
 	background-color: #81b3d2;
 	
-}																																									
+}		
+
+.hotels-list-item-details:hover {
+	color:#ffffff;
+	background-color: #669ec0;
+}																																							
+
+.hotels-list-item-details:active {
+	color:rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
 
 .hotels-list-item-booking {
 	text-decoration: none;
@@ -346,6 +356,16 @@ a{
 	background-color: #766357; 
 	
 }	
+
+
+.hotels-list-item-booking:hover {
+	color:#ffffff;
+	background-color: #604e43;
+}																																							
+
+.hotels-list-item-booking:active {
+	color:rgba(255, 255, 255, 0.3);
+	background-color: #503e33;}
 
 
 
