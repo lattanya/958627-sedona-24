@@ -1,4 +1,9 @@
 ﻿body{
+	
+	
+	
+	
+	
 	margin:0;
 	padding:0;
 	
@@ -256,7 +261,16 @@ a{
 	background-color: #ffffff;
 	border-color: #e5e5e5;
 	border-width: 2px;
-}		
+}	
+
+
+/*стилизация кнопок плюс минус в форме
+
+.button-plus	{
+	
+	background-color: #f2f2f2;
+}
+*/
 
 .booking-search-form-button {
 	font-size: 21px;
@@ -339,12 +353,12 @@ a{
 .footer-logo-html-academy:hover{
 	color: #81b3d2;
 }
-..footer-logo-html-academy:active{
+.footer-logo-html-academy:active{
 	color: #ebebeb;
 }
 
 
-/*_________________________________________________________________________________________*/
+
 /*стилизация страницы с отелями*/
 
 .hotels-list {
@@ -422,3 +436,115 @@ a{
 	
 	background-color: #f2f2f2;
 }
+/*--------------сеточные стили----------------------------*/
+
+/*временно для сетки
+body{
+
+	background-image: url('../img/sedona-index_background.jpg');
+	background-position: top center;
+	background-color: rgba(0,0,0,0.5);
+	background-size: 1372px auto;
+	background-repeat: no-repeat;
+}
+*/
+.main-navigation {
+	position: relative;
+	margin-top: 0px;
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	justify-content: center;
+	background-color: #ffffff;
+	
+}
+
+.site-navigation {
+	display: flex;
+	width: 1200px;
+	box-sizing: border-box;
+	justify-content: space-between;
+	position: absolute;
+	padding-left: 0px;
+	
+}
+
+.main-header-logo {
+	position: absolute;
+	padding:0px;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-64px);
+}
+
+.site-navigation-item {
+	padding-left: 72px;
+	padding-right: 72px;
+}
+
+
+.welcome-view {
+	position: relative;
+
+}
+
+.welcome::{
+	content:"";
+	position: absolute;
+	top: -60px;
+	left: 0;
+	width: 100%;
+	heigth: 60px;
+	background-image: url('../img/polygon.png');
+}
+
+.features-first {
+	display: flex;
+	flex-direction: row;
+	margin:0;
+}
+.features-list {
+	display: flex;
+	flex-basis: 400 px;
+	margin:0;
+}
+
+.view-town {
+	display: flex;
+	width: 800 px;
+	margin:0;
+}
+.features-item-main-details {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.features-second {
+	display: flex;
+	direction: row;
+	margin:0;
+}
+
+.view-canyon {
+	display: flex;
+	width: 800 px;
+    margin:0;
+}
+
+.features-item-main {
+	display: flex;
+	flex-basis: 400 px;
+	margin:0;
+	align-items: top:
+}
+
+.features-item {
+	display: flex;
+	justify-content: space-between;
+}
+.features-item {
+	display: flex;
+	justify-content: space-between;
+}
+
