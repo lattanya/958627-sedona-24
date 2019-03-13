@@ -1,11 +1,8 @@
 ﻿body{
+
 	
-	
-	
-	
-	
-	margin:0;
-	padding:0;
+	margin:0 auto;
+	padding: 0;
 	
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 21px;
@@ -238,13 +235,14 @@ a{
 	line-height: 26px;
 	text-align: center;
 	color: #ffffff;
+	width: 568px;
+	
 	
 	background-color: #766357;
-	position: absolute;
-	padding-left: 140px;
-	padding-right: 140px;
 	padding-bottom:30px;
 	padding-top: 30px;
+	margin: 0 auto;
+	
 }
 .button {
 	border-style: none;
@@ -272,6 +270,7 @@ a{
 	width: 568px;
 	height: 395px;
 	background-color: #ffffff;
+	
 }
 
 .booking-search-form {
@@ -280,21 +279,20 @@ a{
 	color: #000000;
 	
 	border: none;
-	margin-bottom: 31px;
 	background-color: #ffffff;
 }
 
-.booking-search-form-input {
+.booking-search-form-check-input {
 	font: inherit;
-	margin-bottom: 31px;
 	border: none;
 	background-color: #f2f2f2;
+	width: 346px;
 }
 
-.booking-search-form-input:hover {
+.booking-search-form-check-input:hover {
 	background-color: #ebebeb;
 }	
-.booking-search-form-input:focus{
+.booking-search-form-check-input:focus{
 	background-color: #ffffff;
 	border-color: #e5e5e5;
 	border-width: 2px;
@@ -596,22 +594,35 @@ body{
 	box-sizing: border-box;
 	width: 568px;
 	flex-direction: column;
+	position: absolute;
+	left: 50%;	
+	transform: translateX(-50%);
 	
 }
 
-.booking-search-form-check-in {
-	margin: 0px;
-	padding-top: 54px;
-	padding-left: 60px;
-	padding-right: 55px;
-
-	
+.booking-search-form-check{
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 30px;
 }
-.booking-search-form-check-out {
-	margin: 0px;
-	padding-top: 30px;
-	padding-left: 60px;
-	padding-right: 55px;
 
-	
+.booking-search-form-person {
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 55px;
+}
+
+.booking-search-form-person-items{
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+
+}
+
+.booking-search-form-person-input {
+	width: 38px;
 }
