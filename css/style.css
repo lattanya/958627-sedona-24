@@ -298,14 +298,23 @@ a{
 	border-width: 2px;
 }	
 
-
-/*стилизация кнопок плюс минус в форме
-
-.button-plus	{
-	
+.booking-search-form-person-input {
 	background-color: #f2f2f2;
+	border: none;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	padding: 0;
 }
-*/
+
+.booking-search-form-person-items button { 
+	background-color: #f2f2f2;
+	border: none;
+	width: 38px;
+	height: 38px;
+	padding: 0;
+}
+
 
 .booking-search-form-button {
 	font-size: 21px;
@@ -623,6 +632,26 @@ body{
 
 }
 
-.booking-search-form-person-input {
-	width: 38px;
+.maps {
+	width: 1200px;
+	height: 593px;
+	background-image: url(..//img/map.png);
+	
 }
+
+.main-footer {
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	
+}
+
+.footer-sotial-list {
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	margin: 0;
+	
+}
+
+
