@@ -12,6 +12,7 @@
 	color: #000000;
 	
 	background-color: #ffffff;
+	width: 1200px;
 }
 
 a{
@@ -27,6 +28,7 @@ a{
 
 .site-navigation{
 	list-style:none;
+	width: 1200px;
 }
 .site-navigation a{
 	color: #000000;
@@ -212,7 +214,7 @@ a{
 	background-color: #ffffff;
 	text-align: center;
 	position: relative;
-	padding-top: 30px;
+	padding-top: 50px;
 }	
 
 .booking-head {
@@ -347,9 +349,7 @@ a{
 
 .main-footer {
 	color: #000000;
-	
-	width:1200px;
-	height:120px;
+
 	background-color: #ffffff;
 }
 
@@ -505,7 +505,6 @@ body{
 
 .site-navigation {
 	display: flex;
-	width: 1200px;
 	box-sizing: border-box;
 	justify-content: space-between;
 	padding-left: 0px;
@@ -550,7 +549,6 @@ body{
 
 .features-list {
 	display: flex;
-	width: 1200px;
 	margin:0;
 }
 
@@ -582,22 +580,38 @@ body{
     margin:0;
 }
 
-.features-item-main {
+.features-items-main {
 	display: flex;
 	flex-basis: 400px;
 	margin:0;
 	align-items: flex-start;
+	padding-left: 0;
+	padding-top: 60px;
+	padding-bottom: 84px;
 }
 
 .features-item {
 	display: flex;
 	justify-content: space-between;
-}
-.features-item {
-	display: flex;
-	justify-content: space-between;
+	padding-left: 96px;
+	padding-right: 74px;
+	margin: 0;
+	padding-top: 44px;
+	padding-bottom: 64px
 }
 
+.features-item-sight {
+	width: 208px;
+}
+.features-item-fun {
+	width: 262px;
+}
+.features-item-empty {
+	width: 246px;
+}
+	
+	
+	
 .booking-form {
 	display: flex;
 	box-sizing: border-box;
@@ -633,7 +647,6 @@ body{
 }
 
 .maps {
-	width: 1200px;
 	height: 593px;
 	background-image: url(..//img/map.png);
 	
@@ -643,15 +656,29 @@ body{
 	display: flex;
 	box-sizing: border-box;
 	justify-content: space-between;
-	
+	padding-left: 132px;
+	padding-left: 100px;
+	padding-top: 40px;
+	padding-bottom: 35px;
+	align-items: center;
 }
 
 .footer-sotial-list {
 	display: flex;
 	box-sizing: border-box;
 	justify-content: space-between;
+	width: 160px;
 	margin: 0;
+	padding-left: 0;
+	align-items: center;
 	
+}
+
+.main-footer-logo {
+	display: flex;
+	box-sizing: border-box;
+	width: 240px;
+	margin: 0;
 }
 
 
