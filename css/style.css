@@ -228,8 +228,11 @@ a{
 	line-height: 24px;
 	font-weight: normal;
 	color: #333333;
-	
 	background-color: #ffffff;
+	margin-bottom: 56px;
+	margin-left: 382px;
+	width: 440px;
+	
 }				
 
 .booking-search-button {
@@ -364,8 +367,11 @@ a{
 		
 .footer-social-button {
 	width: 46px;
-	height: 48px;
+	height: 34px;
 	background-color: #81b3d2;
+	display: inline-block;
+	text-align: center;
+	padding-top: 14px;
 }	
 
 .footer-social-button:hover{
@@ -550,6 +556,10 @@ body{
 .features-list {
 	display: flex;
 	margin:0;
+}
+
+.features-list img {
+	display: block;
 }
 
 .features-list-details {
