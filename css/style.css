@@ -473,7 +473,9 @@ a{
 
 
 
-.hotels-sort {
+
+
+.hotels-sort-list-item {
 	font-size: 12px;
 	line-height: 17px;
 	font-weight: normal;
@@ -483,13 +485,13 @@ a{
 	background-color: #ffffff;
 }	
 	
-.hotels-sort:hover {
+.hotels-sort-list-item:hover {
 	
 	color: #81b3d2;
 	text-decoration: underline;
 	
 }		
-	.hotels-sort:active {
+.hotels-sort-list-item:active {
 	
 	color: #000000;
 	text-decoration: none;
@@ -744,7 +746,13 @@ body{
 .hotels-sort {
 	display: flex;
 	box-sizing: border-box;
+}
+
+.hotels-sort-list {
+	display: flex;
+	box-sizing: border-box;
 	justify-content: space-between;
+	width: 355px;
 }
 
 .hotels-list-item {
