@@ -786,3 +786,30 @@ padding-top: 28px;
 	width: 22px;
 	height: 17px;
 }
+
+
+
+.filtres-form {
+	background: #f2f2f2;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #ffffff;
+	
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+}
+
+.filtres-form h3{
+	font-size: 16px;
+	line-height: 21px;	
+	color: #ffffff;
+}
+
+
+
+.filtres-form-checkbox-list {
+	list-style: none;
+}
+
