@@ -807,10 +807,50 @@ padding-top: 28px;
 	color: #ffffff;
 }
 
+.filtres-form-lists {
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	width: 530px;
+}
 
+.filtres-form-checkbox {
+	width: 240px;
+}
 
 .filtres-form-checkbox-list {
 	list-style: none;
+}
+
+
+.filtres-form-checkbox-list-item label {
+	position: relative;
+}
+
+.filtres-form-checkbox-list-item input:not(:checked)+label::before {
+	content:"";
+	position: absolute;
+	top: 2px;
+	left: -30px;
+	width: 30px;
+	height: 30px;
+	background-image: url("../img/checkbox-off.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.filtres-form-checkbox-list-item input:(:checked)+label::before {
+	content:"";
+	position: absolute;
+	top: 2px;
+	left: -30px;
+	width: 30px;
+	height: 30px;
+	background-image: url("../img/checkbox-on.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	
 }
 
 /*стилизация ползунков*/

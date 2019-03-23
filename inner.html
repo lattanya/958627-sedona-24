@@ -25,39 +25,41 @@
 	
 	<section class="filtres">
 		<form class="filtres-form" method="post" action="https://echo.htmlacademy.ru">
-			<div class="filtres-form-checkbox">
-				<h3>Инфраструктура:</h3>
-				<ul class="filtres-form-checkbox-list">
-					<li class="filtres-form-checkbox-list-item">
-						<input type="checkbox">
-						<label for="">Бассейн</label>
-					</li>
-					<li class="filtres-form-checkbox-list-item">
-						<input type="checkbox">
-						<label for="">Бассейн</label>
-					</li>
-					<li class="filtres-form-checkbox-list-item">
-						<input type="checkbox">
-						<label for="">Парковка</label>
-					</li>
-				</ul>
-			</div>
-			<div class="filtres-form-checkbox">
-				<h3>Тип жилья:</h3>
-				<ul class="filtres-form-checkbox-list">
-					<li class="filtres-form-checkbox-list-item">
-						<input type="checkbox">
-						<label for="">Гостиница</label>
-					</li>
-					<li class="filtres-form-checkbox-list-item">
-						<input type="checkbox">
-						<label for="">Мотель</label>
-					</li>
-					<li class="filtres-form-checkbox-list-item">
-						<input type="checkbox">
-						<label for="">Апартаменты</label>
-					</li>
-				</ul>
+			<div class="filtres-form-lists">
+				<div class="filtres-form-checkbox">
+					<h3>Инфраструктура:</h3>
+					<ul class="filtres-form-checkbox-list">
+						<li class="filtres-form-checkbox-list-item">
+							<input type="checkbox" id="pool" hidden>
+							<label for="pool">Бассейн</label>
+						</li>
+						<li class="filtres-form-checkbox-list-item">
+							<input type="checkbox" id="parking" hidden>
+							<label for="parking">Парковка</label>
+						</li>
+						<li class="filtres-form-checkbox-list-item">
+							<input type="checkbox" id="wifi" hidden>
+							<label for="wifi">WI-FI</label>
+						</li>
+					</ul>
+				</div>
+				<div class="filtres-form-checkbox">
+					<h3>Тип жилья:</h3>
+					<ul class="filtres-form-checkbox-list">
+						<li class="filtres-form-checkbox-list-item">
+							<input type="checkbox" id="hotel" hidden>
+							<label for="hotel">Гостиница</label>
+						</li>
+						<li class="filtres-form-checkbox-list-item">
+							<input type="checkbox" id="motel" hidden>
+							<label for="motel">Мотель</label>
+						</li>
+						<li class="filtres-form-checkbox-list-item">
+							<input type="checkbox" id="apartments" hidden>
+							<label for="apartments">Апартаменты</label>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div class="filter-ranger">
 				<div class="filter-ranger-title">
