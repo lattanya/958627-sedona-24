@@ -245,7 +245,7 @@ a{
 	
 }				
 
-.booking-search-button {
+.booking-search-button a{
 	font-size: 21px;
 	line-height: 26px;
 	text-transform: uppercase;
@@ -259,7 +259,13 @@ a{
 	padding-top: 30px;
 	margin: 0 auto;
 	
+	display: block;
+	
+	
 }
+
+
+
 .button {
 	border-style: none;
 	background-color: inherit;
@@ -267,10 +273,10 @@ a{
 }
 
 
-.booking-search-button:hover {
+.booking-search-button a:hover {
 	background-color: #604e43;
 }
-.booking-search-button:active {
+.booking-search-button a:active {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -298,14 +304,41 @@ a{
 	background-color: #ffffff;
 }
 
+.booking-search-form-check-box {
+	display: flex;
+	box-sizing: border-box;
+	width: 346px;
+}
+
 .booking-search-form-check-input {
 	font: inherit;
+	color: #000000;
+	text-transform: uppercase;
+	
 	border: none;
 	background-color: #f2f2f2;
-	width: 346px;
+	width: 312px;
 	
+	box-sizing: border-box;
 	padding-top: 6px;
 	padding-bottom: 6px;
+	padding-left: 15px;
+	padding-right: 30px;
+}
+
+
+
+.booking-search-form-check-button  {
+  background-image: url("..//img/calendar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  
+  border: 0;
+  padding: 0;
+  width: 36px;
+ 
+  
 }
 
 .booking-search-form-check-input:hover {
@@ -324,14 +357,22 @@ a{
 	height: 38px;
 	text-align: center;
 	padding: 0;
+	
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
 }
 
-.booking-search-form-person-items button { 
+.booking-search-form-person button { 
 	background-color: #f2f2f2;
 	border: none;
 	width: 38px;
 	height: 38px;
 	padding: 0;
+	
+	font-size: 26px;
+	color: #a9a9a9;
+	font-weight: bold;
 }
 
 
@@ -340,6 +381,8 @@ a{
 	line-height: 26px;
 	text-align: center;
 	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
 	
 	width: 458px;
 	height: 58px;
@@ -735,11 +778,26 @@ body{
 	margin-bottom: 55px;
 }
 
-.booking-search-form-person-items{
+.booking-search-form-person-adalt{
 	display: flex;
 	box-sizing: border-box;
 	justify-content: space-between;
+	width: 226px;
 
+}
+
+.booking-search-form-person-kids{
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	width: 180px;
+
+}
+
+.booking-search-form-person-box {
+	display: flex;
+	box-sizing: border-box;
+	width: 114px;
 }
 
 .maps {
