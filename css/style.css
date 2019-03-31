@@ -25,6 +25,7 @@ a{
 	color: inherit;
 }
 
+
 .main-navigation{
 	font-size: 14px;
 	line-height: 26px;	
@@ -468,9 +469,17 @@ a{
 
 /*стилизация страницы с отелями*/
 
+
+.hotels {
+	padding-left:74px;
+	padding-right:74px;
+}
+
 .hotels-list {
 	
 	background-color: #ffffff;
+	padding-left: 0;
+	margin: 0;
 }		
 
 
@@ -520,6 +529,8 @@ a{
 	line-height: 26px;
 	color: #000000;
 	
+	padding-left: 72px;
+	
 	background-color: #ffffff;
 }	
 
@@ -533,6 +544,7 @@ a{
 	font-weight: normal;
 	color: #cacaca;
 	border-bottom: 1px dotted #81b3d2;
+	margin-left: 32px;
 	
 	background-color: #ffffff;
 }	
@@ -845,11 +857,17 @@ body{
 .hotels-sort-list {
 	display: flex;
 	box-sizing: border-box;
-	justify-content: space-between;
-	width: 416px;
+	width: 900px;
 	list-style: none;
-	padding-left:0;
+	padding-left:46px;
 	align-items: center;
+}
+
+.hotels-sort-list-title {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000000;
 }
 
 .hotels-list-item {
@@ -873,6 +891,22 @@ padding-top: 28px;
 	
 }
 
+.hotels-list-item-name-button {
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	width: 260px;
+	
+}
+
+.hotels-list-item-name-more {
+	display: block;
+	padding: 8px 16px 8px 20px ;
+}
+
+.hotels-list-item-stars {
+	padding-left: 0;
+}
 
 .hotels-list-item-star {
 	background-image: url("..//img/star.svg");
@@ -906,23 +940,39 @@ padding-top: 28px;
 	font-size: 16px;
 	line-height: 21px;	
 	color: #ffffff;
+	margin-bottom: 30px;
+	margin-top: 0;
+	
 }
 
 .filtres-form-lists {
 	display: flex;
 	box-sizing: border-box;
 	justify-content: space-between;
+	align-content: space-between;
 	width: 530px;
+	padding-left: 74px;
+	
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
 }
 
 .filtres-form-checkbox {
+	
 	width: 240px;
+	
+	
 }
 
 .filtres-form-checkbox-list {
 	list-style: none;
+	
 }
 
+.filtres-form-checkbox-list-item {
+	margin-bottom: 30px;
+}
 
 .filtres-form-checkbox-list-item label {
 	position: relative;
@@ -958,7 +1008,8 @@ padding-top: 28px;
 
 .filter-ranger {
 	width: 330px;
-	margin: 50px auto;
+	margin: 30px auto;
+	margin-right: 72px;
 	color: #ffffff;
 	text-transform: uppercase;
 	
