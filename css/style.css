@@ -864,7 +864,7 @@ body{
 .hotels-sort-list {
 	display: flex;
 	box-sizing: border-box;
-	width: 900px;
+	width: 854px;
 	list-style: none;
 	padding-left:46px;
 	align-items: center;
@@ -876,6 +876,18 @@ body{
 	font-weight: normal;
 	color: #000000;
 }
+
+.hotels-sort-list-arrows {
+	display: flex;
+    box-sizing: border-box;
+	justify-content: space-between;
+	list-style: none;
+	width: 36px;
+	margin-top: 36px;
+	padding: 0;
+}
+
+
 
 .hotels-list-item {
 	display: flex;
