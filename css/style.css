@@ -478,11 +478,12 @@ a{
 	
 }
 
-.footer-logo-html-academy:hover{
-	color: #81b3d2;
+
+.footer-logo-html-academy-fill:hover{
+	fill: #81b3d2;
 }
-.footer-logo-html-academy:active{
-	color: #ebebeb;
+.footer-logo-html-academy-fill:active{
+	fill: #ebebeb;
 }
 
 
@@ -872,7 +873,7 @@ body{
 	
 	
 }
-.footer-container {
+body {
 	position: relative;
 	
 }
@@ -888,7 +889,7 @@ body{
 	align-items: center;
 	background-color: rgba(255,255,255,0.8);
 	position: absolute;
-	top: -120px;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 }
@@ -959,6 +960,10 @@ body{
 	width: 36px;
 	padding: 0;
 	margin: 0;
+}
+
+.hotels-sort-list-arrows-fill polygon {
+	background-color: #cacaca;
 }
 
 
@@ -1074,30 +1079,30 @@ padding-top: 28px;
 .filtres-form-checkbox-list-item label {
 	position: relative;
 }
-
-.filtres-form-checkbox-list-item input:not(:checked)+label::before {
+.filtres-form-checkbox-list-item input+label::before {
 	content:"";
 	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
 	top: -4px;
 	left: -40px;
 	width: 30px;
 	height: 30px;
-	background-image: url("../img/checkbox-off.png");
-	background-repeat: no-repeat;
-	background-position: center;
 	
 }
 
+.filtres-form-checkbox-list-item input:not(:checked)+label::before {
+	background-image: url("../img/checkbox-off.png");
+}
+
 .filtres-form-checkbox-list-item input:checked+label::before {
-	content:"";
-	position: absolute;
-	top: -4px;
-	left: -40px;
-	width: 30px;
-	height: 30px;
 	background-image: url("../img/checkbox-on.png");
-	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 3px center;
+	
+}
+
+.filtres-form-checkbox-list-item input:disabled+label::before {
+	opacity: 0.3;
 	
 }
 
