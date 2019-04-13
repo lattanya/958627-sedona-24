@@ -302,7 +302,7 @@ a{
 	line-height: 26px;
 	color: #000000;
 	
-	border: none;
+	border: 1px #ffffff;
 	background-color: #ffffff;
 }
 
@@ -325,8 +325,9 @@ a{
 	color: #000000;
 	text-transform: uppercase;
 	
-	border: none;
+	border: inherit;
 	background-color: inherit;
+	outline: none;
 	width: 312px;
 	
 	box-sizing: border-box;
@@ -344,7 +345,8 @@ a{
   background-repeat: no-repeat;
   background-color: #f2f2f2;
   
-  border: 0;
+  border: 1px #f2f2f2;
+  outline: none;
   padding: 0;
   width: 36px;
  
@@ -376,16 +378,22 @@ a{
 	font-weight: bold;
 }
 
-.booking-search-form-person button { 
+.booking-search-form-person-button { 
 	background-color: #f2f2f2;
-	border: none;
+	border: 1px #f2f2f2;
 	width: 38px;
 	height: 38px;
 	padding: 0;
-	
+	outline: none;
 	font-size: 26px;
 	color: #a9a9a9;
 	font-weight: bold;
+}
+
+.booking-search-form-person-button:hover {
+	cursor: pointer;
+	color: #81b3d2;
+	
 }
 
 
@@ -405,6 +413,7 @@ a{
 
 .booking-search-form-button:hover{
 	background-color: #669ec0;
+	cursor: pointer;
 }
 
 .booking-search-form-button:active{
@@ -479,10 +488,10 @@ a{
 }
 
 
-.footer-logo-html-academy-fill:hover{
+.footer-logo-html-academy:hover .footer-logo-html-academy-fill {
 	fill: #81b3d2;
 }
-.footer-logo-html-academy-fill:active{
+.footer-logo-html-academy:active .footer-logo-html-academy-fill{
 	fill: #ebebeb;
 }
 
@@ -962,11 +971,20 @@ body {
 	margin: 0;
 }
 
-.hotels-sort-list-arrows-fill polygon {
-	background-color: #cacaca;
+.hotels-sort-list-arrows-fill .hotels-sort-list-arrows-fill-up {
+	fill: #cacaca;
 }
 
-
+.hotels-sort-list-arrows-fill:hover .hotels-sort-list-arrows-fill-up {
+	fill: #000000;
+	cursor: pointer;
+}
+.hotels-sort-list-arrows-fill:focus .hotels-sort-list-arrows-fill-up {
+	fill: #81b3d2;
+}
+.hotels-sort-list-arrows-fill:active .hotels-sort-list-arrows-fill-up {
+	fill: #81b3d2;
+}
 
 .hotels-list-item {
 	display: flex;
@@ -1079,6 +1097,10 @@ padding-top: 28px;
 .filtres-form-checkbox-list-item label {
 	position: relative;
 }
+.filtres-form-checkbox-list-item label {
+	cursor: pointer;
+}
+
 .filtres-form-checkbox-list-item input+label::before {
 	content:"";
 	position: absolute;
@@ -1090,6 +1112,10 @@ padding-top: 28px;
 	height: 30px;
 	
 }
+.filtres-form-checkbox-list-item input+label::before {
+	cursor: pointer;
+}
+
 
 .filtres-form-checkbox-list-item input:not(:checked)+label::before {
 	background-image: url("../img/checkbox-off.png");
