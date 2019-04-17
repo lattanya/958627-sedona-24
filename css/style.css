@@ -395,7 +395,11 @@ a{
 	color: #81b3d2;
 	
 }
-
+.booking-search-form-person-button:active {
+	cursor: pointer;
+	color: #000000;
+	
+}
 
 .booking-search-form-button {
 	font-size: 21px;
@@ -821,6 +825,14 @@ body{
 	
 }
 
+.booking-form--hidden {
+opacity:0;	
+}
+
+.booking-form--showed {
+opacity:1;	
+}
+
 .booking-search-form-check{
 	display: flex;
 	box-sizing: border-box;
@@ -868,12 +880,7 @@ body{
 	width: 114px;
 }
 
-.booking-search-form-person-box:hover button{
-	color:#000000;
-}
-.booking-search-form-person-box:active button{
-	color:#81b3d2;
-}
+
 
 .maps {
 	height: 593px;
